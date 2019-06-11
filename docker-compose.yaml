@@ -1,0 +1,13 @@
+version: "3"
+services: 
+  circus:
+    image: dalongrong/circus:3.7-slim-stretch
+    ports: 
+    - "9999:9999"
+    - "5555:5555"
+    volumes: 
+    - "./circus.ini:/app/circus.ini"
+  circus-web:
+    image: dalongrong/circusd-web:2.7-slim-stretch
+    ports:
+    - "8080:8080"
