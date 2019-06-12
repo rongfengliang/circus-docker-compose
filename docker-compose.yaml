@@ -1,6 +1,6 @@
 version: "3"
 services: 
-  circus:
+  appcircus:
     image: dalongrong/circus:3.7-slim-stretch
     ports: 
     - "9999:9999"
